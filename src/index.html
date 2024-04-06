@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de interes compuesto</title>
+        <script defer src="./index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <main>
+            <h1>Calculadora de interes compuesto</h1>
+            <form action="index.html" method="dialog" id="compoundInterestCalculation">
+                <span>Balance Inicial</span>
+                <input type="number" name="initialBalance" id="initialBalance">
+                <span>Depósito Periódico</span>
+                <input type="number" name="mensualContribution" id="mensualContribution">
+                <span>Ratio Interés Anual</span>
+                <input type="number" name="performance" id="performance">
+                <span>Duración</span>
+                <input type="number" name="period" id="period">
+                <input type="submit" value="Calcular">
+            </form>
+            <canvas id="chartCompoundInterest"></canvas>
+        </main>
+    </body>
+</html>
