@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculadora de interes compuesto</title>
-        <script defer src="./index.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    </head>
-    <body>
-        <main>
-            <h1>Calculadora de interes compuesto</h1>
-            <form action="index.html" method="dialog" id="compoundInterestCalculation">
-                <span>Balance Inicial</span>
-                <input type="number" name="initialBalance" id="initialBalance">
-                <span>Depósito Periódico</span>
-                <input type="number" name="mensualContribution" id="mensualContribution">
-                <span>Ratio Interés Anual</span>
-                <input type="number" name="performance" id="performance">
-                <span>Duración</span>
-                <input type="number" name="period" id="period">
-                <input type="submit" value="Calcular">
-            </form>
-            <canvas id="chartCompoundInterest"></canvas>
-        </main>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de interes compuesto</title>
+    <script defer src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 class="mainTitle">
+            <span>1#</span>
+            Calculadora de interes compuesto
+        </h1>
+        </header>
+        
+        <section class="inputParamsBox">
+            <span>
+                <img src="svg/params-icon.svg" alt="Prediction performance of investment">
+                <h2>Parametros</h2>
+            </span>
+        <form action="index.html" method="dialog" id="compoundInterestCalculation">
+            <div class="inputParamsSection">
+                <label for="initialBalance">Balance Inicial</label>
+                <div class="inputParamsElemen">
+                    <input type="number" name="initialBalance" id="initialBalance" value="100">
+                    <img src="svg/initial-balance-icon.svg" alt="Initial balance of account">
+                </div>
+            </div>
+
+                <div class="inputParamsSection">
+                    <label for="mensualContribution">Depósito Periódico</label>
+                    <div class="inputParamsElemen">
+                        <input type="number" name="mensualContribution" id="mensualContribution" value="100">
+                        <img src="svg/mensual-contribution-icon.svg" alt="Mensual contribution invest">
+                    </div>
+                </div>
+            
+
+                <div class="inputParamsSection">
+                    <label for="performance">Ratio Interés Anual</label>
+                    <div class="inputParamsElemen">
+                        <input type="number" name="performance" id="performance" value="7">
+                        <img src="svg/performance-icon.svg" alt="Prediction performance of investment">
+                    </div>
+                </div>
+            
+
+                <div class="inputParamsSection">
+                    <label for="period">Duración</label>
+                    <div class="inputParamsElemen">
+                        <input type="number" name="period" id="period" value="5">
+                        <img src="svg/period-icon.svg" alt="Period od investment">
+                    </div>
+                </div>
+
+            <input type="submit" value="Calcula tu interes compuesto" class="inputSubmit">
+        </form>
+        </section>
+
+        <section class="chartCompoundInterestBox">
+            <span>
+                <img src="svg/graph-icon.svg" alt="Pdediction performance of investment">
+                <h2>Grafico</h2>
+            </span>
+            <canvas class="chartCompoundInterest" id="chartCompoundInterest"></canvas>
+        </section>
+    </main>
+</body>
+
 </html>

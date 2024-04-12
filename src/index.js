@@ -103,7 +103,7 @@ function compoundInterestCalculation(initialBalance, mensualContribution, perfor
     return data                               
 }
 
-
+// CODE - PREVIOUSE CASE
 
 // for (let index = 1; index <= periodo; index++) {
 //     interesCompuesto += aportacionMensual * (1 + rendimientoPorcentaje/periodo) ** index 

@@ -1,0 +1,135 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    border: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 900px;
+    height: auto;
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+header { 
+    width: auto;
+    padding-left: 5rem; 
+    text-align: left;
+    height:min-content;
+    margin: 0;
+
+    span {
+        font-size: 3rem;
+    }
+}
+
+
+section { 
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: auto;
+    height: auto;
+    padding: 1rem 5rem;
+
+    span {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: .5rem;
+        align-content: baseline;
+        h2 {
+            width: fit-content;
+             font-size: 1.2rem;
+        }
+    }
+}
+
+.inputParamsBox { 
+    padding-top: 0.5rem;
+    background: #faecd8;
+
+    form {
+        display: grid;
+        gap: 1rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .inputParamsSection {
+        display: grid;
+        gap: 0.2rem;
+
+        label {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: medium;
+            font-weight: 500;
+        }
+
+        .inputParamsElemen {
+            display: flex;
+            flex-direction: row;
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            border-radius: 2px;
+            justify-content: space-between;
+
+            input {
+                background: transparent;
+                border: 0px;
+                width: 100%;
+                font-size: medium;
+                padding-right: 1rem;
+                text-align: right;
+            }
+            
+            img {
+                border-left: 1px solid;
+                background: #c1c1c16f;
+                padding: 0.1rem .7rem;
+                
+            }
+        }
+    }
+
+    .inputSubmit {
+        width: fit-content;
+        justify-self: center;
+        padding: 0.5rem 1rem;
+        margin: 1rem;
+        border: 1px solid black;
+        border-radius: 2px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: medium;
+        font-weight: 500;
+    }
+}
+
+
+.chartCompoundInterestBox {
+    background: #e3e4e9;
+}
+
+input:focus-visible {
+    outline: 0;    
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
